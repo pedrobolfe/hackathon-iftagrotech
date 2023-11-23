@@ -2,6 +2,11 @@
 .text-black {
   color: black !important; 
 }
+
+.bg-white{
+  background-color: white !important;
+}
+
 .grafico-img {
   max-width: 70%; 
   height: auto; 
