@@ -1,28 +1,16 @@
-/*
-Theme Name: Ministore
-Theme URI: 
-Author: 
-Author URI: 
-Description: Ministore is specially designed product packaged for Ministore by Moksha.
-Version: 
-*/
+.grafico-img {
+  max-width: 70%; 
+  height: auto; 
+}
 
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
+.icon-box-icon {
+  margin-right: -20px; 
+}
+.logo-img {
+  max-width: 280px; 
+  height: auto; 
+}
 
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-
-/*------------------------------------------------
-
-CSS STRUCTURE:
-
-    
-/*--------------------------------------------------------------
-/** 1. VARIABLES
---------------------------------------------------------------*/
 :root {
   --accent-color:             #717171;
   --white-color:              #fff;
