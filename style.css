@@ -96,6 +96,10 @@ a:hover {
   color: var(--primary-color);
 }
 
+#produtos:hover{
+  background-color: var(--dark-color) !important;
+}
+
 /*------------ Background Color -----------*/
 .bg-gray {
     background: var(--gray-color);
