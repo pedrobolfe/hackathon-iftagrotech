@@ -19,6 +19,7 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
+    <script src="js/mapa.js"></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -206,7 +207,7 @@
     </header>
 
     <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
-      <div class="swiper main-swiper">
+      <div class="swiper main-swiper" style="margin-top: 100px; margin-bottom: 100px">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="container">
@@ -227,8 +228,8 @@
           </div>
         </div>
       </div>
-      
     </section>
+
     <section id="company-services" class="padding-large">
       <div class="container">
         <div class="row">
@@ -445,44 +446,50 @@
       <div class="row d-flex flex-wrap align-items-center">
         <div class="col-md-6 col-sm-12">
           <div class="text-content offset-4 padding-medium">
-            <h1>Localização dos produtores</h1>
-            <h3>Selecione um bairro</h3>
-            <div class="col-md-3">
-              <select class="form-select" name="bairros">
-                <option selected>Bairros</option>
-                <option value="1">Centro</option>
-                <option value="2">Cancelli</option>
-                <option value="3">Country</option>
-                <option value="4">São Cristóvão</option>
-                <option value="5">Pacaembu</option>
-                <option value="6">Região do Lago</option>
-                <option value="7">Maria Luiza</option>
-                <option value="8">Parque São Paulo</option>
-                <option value="9">Neva</option>
-                <option value="10">Pioneiros Catarinenses</option>
-                <option value="11">Santo Onofre</option>
-                <option value="12">Alto Alegre</option>
-                <option value="13">Coqueiral</option>
-                <option value="14">Parque Verde</option>
-                <option value="15">Recanto Tropical</option>
-                <option value="16">Canadá</option>
-                <option value="17">Brasmadeira</option>
-                <option value="18">Interlagos</option>
-                <option value="19">Floresta</option>
-                <option value="20">Brasília</option>
-                <option value="21">Periolo</option>
-                <option value="22">Morumbi</option>
-                <option value="23">Cataratas</option>
-                <option value="24">Cascavel Velho</option>
-                <option value="25">Santa Felicidade</option>
-                <option value="26">Universitário</option>
-                <option value="27">XIV de Novembro</option>
-                <option value="28">Santos Dumont</option>
-                <option value="29">Santa Cruz</option>
-                <option value="30">Esmeralda</option>
-              </select>
+            <h1>Localização das unidades</h1>
+            <h3>Selecione um produto</h3>
+            <div class="col-md-8">
+              <select class="form-select" name="hortalicas" id="selecao-hortalicas">
+                <option selected>Produtos</option>
+                <option value="1">Alface</option>
+                <option value="2">Tomate</option>
+                <option value="3">Cenoura</option>
+                <option value="4">Cebola</option>
+                <option value="5">Brócolis</option>
+                <option value="1">Maçã</option>
+                <option value="2">Banana</option>
+                <option value="2">Laranja</option>
+                <option value="3">Morango</option>
+                <option value="4">Uva</option>
+                <option value="5">Melancia</option>
+                <option value="6">Pêssego</option>
+            </select>
+            <h3>Mais proximas de</h3>
+            <div class="row">
+              <div class="col-md-7">
+                <input placeholder="cep: 85803-000" class="form-control" type="text" id="cep" name="cep" onfocus="getLocation()">
+              </div>
+              <div class="col-md-5">
+                <input placeholder="num: 000" class="form-control" type="text" id="num" name="num">
+              </div>
+            </div>            
+            <script>
+              const x = document.getElementById("demo");
+              
+              function getLocation() {
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                  x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+              }
+              
+              function showPosition(position) {
+                console.log("latitude: " + position.coords.latitude);
+                console.log("longitude: " + position.coords.longitude);
+              }
+              </script>
           </div>
-
           </div>
         </div>
         <div class="col-md-6 col-sm-12 ms-auto">
