@@ -8,10 +8,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
-  .card-body{
-    background-color: #e6e6e6 !important;
-  }
+
 
   #message {
     width: 200px;
