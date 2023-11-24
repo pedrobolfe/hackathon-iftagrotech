@@ -1,5 +1,6 @@
 
 
+
 .job-box {
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -13,10 +14,16 @@
     margin-top: 5px; /* Adjust the margin to reduce spacing */
 }
 
-/* Additional styles to adjust button alignment */
-.btn {
-    margin-top: 5px; /* Adjust as needed */
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
 }
+
+.btn {
+    padding: 10px 80px; /* Adjust the padding to increase the button size */
+    font-size: 15px; /* Adjust the font size to increase the text size */
+}
+
 
 
 body {
