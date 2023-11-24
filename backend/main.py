@@ -31,7 +31,6 @@ async def display_map(fruta, lat_org, long_org):
             iframe = folium.IFrame(f'''
                                         <p style:40px>  
                                             Endereco: {str(banco[i]['endereco'])} <br> 
-                                            Patrimonio: {str(banco[i]['patrimonio'])} <br> 
                                             Produtos: {prod}
                                             <h3>
                                                 Contato:
