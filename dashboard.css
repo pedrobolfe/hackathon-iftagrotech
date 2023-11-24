@@ -207,3 +207,42 @@ ul {
 .mb-30 {
     margin-bottom: 30px;
 }
+
+#doacao{
+    background-color: #4bc970 !important;
+}
+
+#demo-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal__content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 600px; /* Defina um valor máximo para a largura, se desejar */
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal__footer {
+    margin-top: 20px;
+  }
+  
+  .modal__footer-btn-close {
+    color: #007BFF; /* ou a cor desejada */
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal__footer-btn-close:hover {
+    text-decoration: underline;
+  }
