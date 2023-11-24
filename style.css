@@ -93,7 +93,7 @@ li {
   background-color: #fff;
   padding: 20px;
   width: 80%; /* Ajuste a largura conforme necessário */
-  max-width: 600px; /* Defina um valor máximo para a largura, se desejar */
+  max-width: auto;
   text-align: center;
   position: relative;
 }

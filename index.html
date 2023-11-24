@@ -448,85 +448,156 @@
     <div class="modal__content">
       <main>
         <h1>Datas Anuais</h1>
-   
         <p>
           Consulte esse calendário e saiba quando é o momento para comprar legumes, verduras e frutas
         </p>
         <div class="items">
-            <div class="item">
-                <h3>1) Levantamento de Requisitos</h3>
-                <ul>
-                    <li>Análise das políticas e estratégias pedagógicas</li>
-                    <li>Definição das funcionalidades</li>
-                </ul>
-            </div>
-            <div class="item">
-                <h3>2) Engenharia de Software</h3>
-                <ul>
-                    <li>Gerenciamento com Scrum e Kanban</li>
-                    <li>Diagramas</li>
-                    <li>Protótipo</li>
-                </ul>
-            </div>
-            <div class="item">
-                <h3>3) Desenvolvimento</h3>
-                <ul>
-                    <li>Desenvolvimento das telas</li>
-                    <li>Implementação das classes</li>
-                    <li>Implementação do banco de dados</li>
-                </ul>
-            </div>
-            <div class="item">
-                <h3>4) Testes</h3>
-                <ul>
-                    <li>Testes funcionais</li>
-                    <li>Testes de usabilidade</li>
-                    <li>Testes de integração</li>
-                </ul>
-            </div>
+          <div class="item">
+            <h3>Janeiro</h3>
+            <ul>
+              <li>Análise das políticas e estratégias pedagógicas</li>
+              <li>Definição das funcionalidades</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Fevereiro</h3>
+            <ul>
+              <li>Gerenciamento com Scrum e Kanban</li>
+              <li>Diagramas</li>
+              <li>Protótipo</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Março</h3>
+            <ul>
+              <li>Desenvolvimento das telas</li>
+              <li>Implementação das classes</li>
+              <li>Implementação do banco de dados</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Abril</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
         </div>
-    </main>
-   
+
+        <div class="items">
+          <div class="item">
+            <h3>Maio</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Junho</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Julho</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Agosto</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="item">
+            <h3>Setembro</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Outubro</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Novembro</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Dezembro</h3>
+            <ul>
+              <li>Testes funcionais</li>
+              <li>Testes de usabilidade</li>
+              <li>Testes de integração</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <div class="modal__footer">
+        <a href="#" class="modal__footer-btn-close"> Fechar </a>
+      </div>
     </div>
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('demo-modal');
-        const modalLinks = document.querySelectorAll('[data-toggle="modal"]');
-        const modalCloseBtn = document.querySelector('.modal__footer-btn-close');
-        const modalCloseIcon = document.querySelector('.modal__close');
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('demo-modal');
+      const modalLinks = document.querySelectorAll('[data-toggle="modal"]');
+      const modalCloseBtn = document.querySelector('.modal__footer-btn-close');
+      const modalCloseIcon = document.querySelector('.modal__close');
 
-        function openModal() {
-            modal.style.display = 'flex';
+      function openModal() {
+        modal.style.display = 'flex';
+      }
+
+      function closeModal() {
+        modal.style.display = 'none';
+      }
+
+      modalLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          openModal();
+        });
+      });
+
+      modalCloseBtn.addEventListener('click', function () {
+        closeModal();
+      });
+
+      modalCloseIcon.addEventListener('click', function () {
+        closeModal();
+      });
+
+      window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          closeModal();
         }
-
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        modalLinks.forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                openModal();
-            });
-        });
-
-        modalCloseBtn.addEventListener('click', function () {
-            closeModal();
-        });
-
-        modalCloseIcon.addEventListener('click', function () {
-            closeModal();
-        });
-
-        window.addEventListener('click', function (event) {
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
+      });
     });
-</script>
+  </script>
 
 
   <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge">
