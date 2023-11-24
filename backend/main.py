@@ -41,7 +41,7 @@ async def display_map(fruta, lat_org, long_org):
                                     ''')
 
             
-            popup = folium.Popup(iframe, min_width=300, max_width=400)
+            popup = folium.Popup(iframe, min_width=350, max_width=400)
                 
             folium.Marker(
                 location=[banco[i]["cordenadas"][0], banco[i]["cordenadas"][1]],
