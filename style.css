@@ -1,4 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fbf9e8;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  width: 200px;
+}
+
+.box-img {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-img-pc {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.box-img-pc img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#demo-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%; /* Ajuste a largura conforme necessário */
+  max-width: auto;
+  text-align: center;
+  position: relative;
+}
+
+.modal__footer {
+  margin-top: 20px;
+}
+
+.modal__footer-btn-close {
+  color: #007BFF; /* ou a cor desejada */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__footer-btn-close:hover {
+  text-decoration: underline;
+}
+
+
+.text-black {
+  color: black !important; 
+}
+
+.bg-white{
+  background-color: white !important;
+}
 
 .grafico-img {
   max-width: 70%; 
@@ -87,6 +208,10 @@ a.light {
 a:hover {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+#produtos:hover{
+  background-color: var(--dark-color) !important;
 }
 
 /*------------ Background Color -----------*/
