@@ -15,7 +15,7 @@ async def display_map(fruta, lat_org, long_org):
     
     folium.Marker(
                 location=[lat_org, long_org],
-                icon=folium.Icon(icon='user', color='blue'),
+                icon=folium.Icon(icon='user', color='red'),
                 popup=folium.Popup("<p style:30px>Voce esta aqui</p>", min_width=80, max_width=80)
             ).add_to(folium_map)
    
@@ -42,7 +42,7 @@ async def display_map(fruta, lat_org, long_org):
                                     ''')
 
             
-            popup = folium.Popup(iframe, min_width=300, max_width=400)
+            popup = folium.Popup(iframe, min_width=350, max_width=400)
                 
             folium.Marker(
                 location=[banco[i]["cordenadas"][0], banco[i]["cordenadas"][1]],
