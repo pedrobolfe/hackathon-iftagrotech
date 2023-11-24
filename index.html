@@ -441,233 +441,236 @@
         </div>
       </div>
 
-      <div class="swiper-pagination position-absolute text-center"></div>
 
-
-  <div id="demo-modal" class="modal">
-    <div class="modal__content">
-      <main>
-        <h1>Datas Anuais</h1>
-        <p>
-          Consulte esse calendário e saiba quando é o momento para comprar legumes, verduras e frutas
-        </p>
-        <div class="items">
-          <div class="item">
-            <h5 class="text-decoration-underline">Dezembro</h5>
-          </div>
-          <div class="item">
-            <h5 class="text-decoration-underline">Janeiro</h5>
-          </div>
-          <div class="item">
-            <h5 class="text-decoration-underline">Fevereiro</h5>
-          </div>
-          <div class="item">
-
-            <h5 class="text-decoration-underline">Março</h5>
-          </div>
-          <div class="item">
-            <h5 class="text-decoration-underline">Abril</h5>
-          </div>
-          <div class="item">
-            <h5 class="text-decoration-underline">Maio</h5>
-          </div>
-        </div>
-
-       
-      </main>
-      <div class="modal__footer">
-        <a href="#" class="modal__footer-btn-close"> Fechar </a>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const modal = document.getElementById('demo-modal');
-      const modalLinks = document.querySelectorAll('[data-toggle="modal"]');
-      const modalCloseBtn = document.querySelector('.modal__footer-btn-close');
-      const modalCloseIcon = document.querySelector('.modal__close');
-
-      function openModal() {
-        modal.style.display = 'flex';
-      }
-
-      function closeModal() {
-        modal.style.display = 'none';
-      }
-
-      modalLinks.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          event.preventDefault();
-          openModal();
-        });
-      });
-
-      modalCloseBtn.addEventListener('click', function () {
-        closeModal();
-      });
-
-      modalCloseIcon.addEventListener('click', function () {
-        closeModal();
-      });
-
-      window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-          closeModal();
-        }
-      });
-    });
-  </script>
-
-
-  <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge">
-    <div class="row d-flex flex-wrap align-items-center">
-      <div class="col-md-6 col-sm-12">
-        <div class="text-content offset-4 padding-medium">
-          <h1>Localização das unidades</h1>
-          <h3>Selecione um produto</h3>
-          <div class="col-md-8">
-            <select class="form-select" name="hortalicas"  id="selecao-hortalicas" onchange="getLocation()">
-              <option selected>Produtos</option>
-              <option value="1">Alface</option>
-              <option value="2">Tomate</option>
-              <option value="3">Cenoura</option>
-              <option value="4">Cebola</option>
-              <option value="5">Brócolis</option>
-              <option value="1">Maçã</option>
-              <option value="2">Banana</option>
-              <option value="2">Laranja</option>
-              <option value="3">Morango</option>
-              <option value="4">Uva</option>
-              <option value="5">Melancia</option>
-              <option value="6">Pêssego</option>
-            </select>
-            <h3>Mais proximas de</h3>
-            <div class="row">
-              <div class="col-md-7">
-                <input placeholder="cep: 85803-000" class="form-control" type="text" id="cep" name="cep"
-                  onfocus="getLocation()">
+      <div id="demo-modal" class="modal">
+        <div class="modal__content">
+          <main>
+            <h1>Datas Anuais</h1>
+            <p>
+              Consulte esse calendário e saiba quando é o momento para comprar legumes, verduras e frutas
+            </p>
+            <div class="items">
+              <div class="item">
+                <h5 class="text-decoration-underline">Dezembro</h5>
               </div>
-              <div class="col-md-5">
-                <input placeholder="num: 000" class="form-control" type="text" id="num" name="num">
+              <div class="item">
+                <h5 class="text-decoration-underline">Janeiro</h5>
+              </div>
+              <div class="item">
+                <h5 class="text-decoration-underline">Fevereiro</h5>
+              </div>
+              <div class="item">
+
+                <h5 class="text-decoration-underline">Março</h5>
+              </div>
+              <div class="item">
+                <h5 class="text-decoration-underline">Abril</h5>
+              </div>
+              <div class="item">
+                <h5 class="text-decoration-underline">Maio</h5>
               </div>
             </div>
-            <script>
-              const x = document.getElementById("demo");
 
-              function getLocation() {
-                if (navigator.geolocation) {
-                  navigator.geolocation.getCurrentPosition(showPosition);
-                } else {
-                  x.innerHTML = "Geolocation is not supported by this browser.";
-                }
-              }
 
-              function showPosition(position) {
-                console.log("latitude: " + position.coords.latitude);
-                console.log("longitude: " + position.coords.longitude);
-                //retornar para o pedro lat, long nessa ordem
-              }
-            </script>
+          </main>
+          <div class="modal__footer">
+            <a href="#" class="modal__footer-btn-close"> Fechar </a>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12 ms-auto">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115867.7854499444!2d-53.511574560572484!3d-24.83417726966189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3cd7497de6b7b%3A0x1981f7008f00ff27!2sEspig%C3%A3o%20Azul%2C%20Cascavel%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1700759736150!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
 
-  <footer id="footer" class="overflow-hidden">
-    <div class="container">
-      <div class="row">
-        <div class="footer-top-area">
-          <div class="row d-flex flex-wrap justify-content-between">
-            <div class="col-lg-3 col-sm-6 pb-3">
-              <div class="footer-menu">
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/logo-Cultiva_Cascavel.png" class="logo-img">
-                </a>
-                <div class="social-links">
-                  <ul class="d-flex list-unstyled">
-                    <li>
-                      <a href="#">
-                        <svg class="facebook">
-                          <use xlink:href="#facebook" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg class="instagram">
-                          <use xlink:href="#instagram" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg class="twitter">
-                          <use xlink:href="#twitter" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg class="linkedin">
-                          <use xlink:href="#linkedin" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <svg class="youtube">
-                          <use xlink:href="#youtube" />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const modal = document.getElementById('demo-modal');
+          const modalLinks = document.querySelectorAll('[data-toggle="modal"]');
+          const modalCloseBtn = document.querySelector('.modal__footer-btn-close');
+          const modalCloseIcon = document.querySelector('.modal__close');
+
+          function openModal() {
+            modal.style.display = 'flex';
+          }
+
+          function closeModal() {
+            modal.style.display = 'none';
+          }
+
+          modalLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+              event.preventDefault();
+              openModal();
+            });
+          });
+
+          modalCloseBtn.addEventListener('click', function () {
+            closeModal();
+          });
+
+          modalCloseIcon.addEventListener('click', function () {
+            closeModal();
+          });
+
+          window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+              closeModal();
+            }
+          });
+        });
+      </script>
+
+
+      <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge">
+        <div class="row d-flex flex-wrap align-items-center">
+          <div class="col-md-6 col-sm-12">
+            <div class="text-content offset-4 padding-medium">
+              <h1>Localização das unidades</h1>
+              <h3>Selecione um produto</h3>
+              <div class="col-md-8">
+                <select class="form-select" name="hortalicas" id="selecao-hortalicas" onchange="getLocation()">
+                  <option selected>Produtos</option>
+                  <option value="Alface">Alface</option>
+                  <option value="Tomate">Tomate</option>
+                  <option value="Cenoura">Cenoura</option>
+                  <option value="Cebola">Cebola</option>
+                  <option value="Brocolis">Brócolis</option>
+                  <option value="Maca">Maçã</option>
+                  <option value="Banana">Banana</option>
+                  <option value="Laranja">Laranja</option>
+                  <option value="Morango">Morango</option>
+                  <option value="Uva">Uva</option>
+                  <option value="Melancia">Melancia</option>
+                  <option value="Pessego">Pêssego</option>
+                </select>
+                <h3>Mais proximas de</h3>
+                <div class="row">
+                  <div class="col-md-7">
+                    <input placeholder="cep: 85803-000" class="form-control" type="text" id="cep" name="cep"
+                      onfocus="getLocation()">
+                  </div>
+                  <div class="col-md-5">
+                    <input placeholder="num: 000" class="form-control" type="text" id="num" name="num">
+                  </div>
+                </div>
+                <script>
+                  const x = document.getElementById("demo");
+                
+                  function getLocation() {
+                    const select = document.getElementById("selecao-hortalicas");
+                    const selectedValue = select.options[select.selectedIndex].value;
+                
+                    if (navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(position => showPosition(position, selectedValue));
+                    } else {
+                      x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                  }
+                
+                  function showPosition(position, selectedValue) {
+                    console.log("Produto selecionado: " + selectedValue);
+                    console.log("Latitude: " + position.coords.latitude);
+                    console.log("Longitude: " + position.coords.longitude);
+                    // retornar para o Pedro lat, long nessa ordem
+                  }
+                </script>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 ms-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115867.7854499444!2d-53.511574560572484!3d-24.83417726966189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3cd7497de6b7b%3A0x1981f7008f00ff27!2sEspig%C3%A3o%20Azul%2C%20Cascavel%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1700759736150!5m2!1spt-BR!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="footer-top-area">
+              <div class="row d-flex flex-wrap justify-content-between">
+                <div class="col-lg-3 col-sm-6 pb-3">
+                  <div class="footer-menu">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="images/logo-Cultiva_Cascavel.png" class="logo-img">
+                    </a>
+                    <div class="social-links">
+                      <ul class="d-flex list-unstyled">
+                        <li>
+                          <a href="#">
+                            <svg class="facebook">
+                              <use xlink:href="#facebook" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <svg class="instagram">
+                              <use xlink:href="#instagram" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <svg class="twitter">
+                              <use xlink:href="#twitter" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <svg class="linkedin">
+                              <use xlink:href="#linkedin" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <svg class="youtube">
+                              <use xlink:href="#youtube" />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pb-3">
+                  <div class="footer-menu text-uppercase">
+                    <h5 class="widget-title pb-2">Ajuda & Informações</h5>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-sm-6 pb-3">
+                  <div class="footer-menu contact-item">
+                    <h5 class="widget-title text-uppercase pb-2">Contate-nos</h5>
+                    <p>Você tem alguma dúvida ou sugestão? </p>
+                    <p>Gabriel Costa de Moraes <a href="">gabrielcostademoraes13@gmail.com</a></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 pb-3">
-              <div class="footer-menu text-uppercase">
-                <h5 class="widget-title pb-2">Ajuda & Informações</h5>
-              </div>
-            </div>
-            <div class="col-lg-5 col-sm-6 pb-3">
-              <div class="footer-menu contact-item">
-                <h5 class="widget-title text-uppercase pb-2">Contate-nos</h5>
-                <p>Você tem alguma dúvida ou sugestão? </p>
-                <p>Gabriel Costa de Moraes <a href="">gabrielcostademoraes13@gmail.com</a></p>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <hr>
+        <hr>
 
-  </footer>
-  <div id="footer-bottom">
-    <div class="container">
-      <div class="row d-flex flex-wrap justify-content-end">
-        <div class="col-md-4 col-sm-6">
-          <div class="copyright">
-            <p>© Copyright 2023 Cultiva Cascavel. Design by Moraes Gabriel && Bolfe Pedro
-            </p>
+      </footer>
+      <div id="footer-bottom">
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-end">
+            <div class="col-md-4 col-sm-6">
+              <div class="copyright">
+                <p>© Copyright 2023 Cultiva Cascavel. Design by Moraes Gabriel && Bolfe Pedro
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+      <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/plugins.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
