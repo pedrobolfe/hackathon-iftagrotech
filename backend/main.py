@@ -2,8 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import folium
 import json
-
-    
+ 
 app= FastAPI()
 
 @app.get("/rota", response_class=HTMLResponse)
@@ -11,9 +10,6 @@ async def display_map(fruta, lat_org, long_org):
     with open('base.json', 'r') as f:
         banco = json.load(f)
         
-    print(banco['horta2'])
-    
-    
     folium_map = folium.Map(location=[lat_org, long_org], zoom_start=13)
     
     folium.Marker(
@@ -22,17 +18,14 @@ async def display_map(fruta, lat_org, long_org):
                 popup=folium.Popup("<p style:30px>Voce esta aqui</p>", min_width=80, max_width=80)
             ).add_to(folium_map)
     
-    for i in banco:
-        print( banco[i]["frutas"])
-        
+    for i in banco:    
         if fruta in banco[i]["frutas"]:
             prod = ''
-            
+
             for p in banco[i]["frutas"]:
                 prod += p + ', '
                 
-            prod = prod[:-3]
-            
+            prod = prod[:-2]
             
             iframe = folium.IFrame(f'''
                                         <p style:40px>  
@@ -52,11 +45,7 @@ async def display_map(fruta, lat_org, long_org):
                 ).add_to(folium_map)
             
     map_response= folium_map.get_root().render()
-    mapa = folium_map.save("mapa_cascavel.html") 
- 
-    
+    # mapa = folium_map.save("mapa_cascavel.html") 
+  
     #RETORNA O JSON DA REQUISÇÃO DE ROTAS DA OSRM
     return HTMLResponse(content=map_response, status_code=200)
-
-    
-    # return HTMLResponse(content=map_response, status_code=200)
