@@ -1,0 +1,142 @@
+{
+    "horta1": {
+        "endereco": "Rua Munique S/N, Cascavel Velho - Cascavel, Brasil",
+        "familias": "03",
+        "patrimonio": "Territorio",
+        "frutas": ["maca", "pera", "uva", "abacaxi", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.957777, -53.459028]
+    },
+    "horta2": {
+        "endereco": "Rua Holanda N°767, Cascavel Velho - Cascavel, Brasil",
+        "familias": "09",
+        "patrimonio": "Territorio",
+        "frutas": ["morango", "banana", "mamao", "laranja", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.976599, -53.417686]
+    },
+    "horta3": {
+        "endereco": "Rua- Pascoal Ranieri Mazille S/N, Presidente - Cascavel, Brasil",
+        "familias": "02",
+        "patrimonio": "Territorio",
+        "frutas": ["kiwi", "abacate", "pessego", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.968187, -53.409148]
+    },
+    "horta4": {
+        "endereco": "Rua Joao Wichoski nº 37, Cascavel Velho - Cascavel, Brasil",
+        "familias": "09",
+        "patrimonio": "Territorio",
+        "frutas": ["cereja", "figo", "ameixa", "goiaba", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.977101, -53.431494]
+    },
+    "horta5": {
+        "endereco": "Rua- Ciencias Sociais Nº389, Universitario - Cascavel, Brasil",
+        "familias": "04",
+        "patrimonio": "Ocupacao",
+        "frutas": ["abacaxi", "uva", "maca", "pera", "alface"],
+        "cordenadas": [-24.987582, -53.442640]
+    },
+    "horta6": {
+        "endereco": "Rua- Jose Carlos Muffato Nº 179, Universitario - Cascavel, Brasil",
+        "familias": "08",
+        "patrimonio": "Linhao",
+        "frutas": ["laranja", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.997066, -53.454042]
+    },
+    "horta7": {
+        "endereco": "Rua- itajai Nº721, Universitario - Cascavel, Brasil",
+        "familias": "01",
+        "patrimonio": "Territorio",
+        "frutas": ["mamao", "banana", "morango", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.998112, -53.452043]
+    },
+    "horta8": {
+        "endereco": "Rua Francisco Alves Nº590, Brasilia - Cascavel, Brasil",
+        "familias": "01",
+        "patrimonio": "Territorio",
+        "frutas": ["uva", "cenoura", "cebola", "brocolis"],
+        "cordenadas": [-24.929408, -53.429994]
+    },
+    "horta9": {
+        "endereco": "Rua- Felicidade Nº633, Interlagos - Cascavel, Brasil",
+        "familias": "02",
+        "patrimonio": "Sesau",
+        "frutas": ["limao", "goiaba", "laranja", "alface", "brocolis"],
+        "cordenadas": [-24.915990, -53.439319]
+    },
+    "horta10": {
+        "endereco": "Rua - Ibema Nº150, Brasmadeira - Cascavel, Brasil",
+        "familias": "06",
+        "patrimonio": "Linhão",
+        "frutas": ["uva", "cenoura", "cebola", "brocolis", "alface"],
+        "cordenadas": [-24.929162, -53.438959]
+    },
+    "horta11": {
+        "endereco": "Rua Sao Marcos Nº590 esquina com Guaira, Tropical /Parque Verde - Cascavel, Brasil",
+        "familias": "04",
+        "patrimonio": "Linhao",
+        "frutas": ["maca", "pera", "uva", "cenoura", "alface", "brocolis"],
+        "cordenadas": [-24.935955, -53.480933]
+    },
+    "horta12": {
+        "endereco": "Av das Torres Linhao da Copel S/N, Fag - Cascavel, Brasil",
+        "familias": "04",
+        "patrimonio": "Linhao",
+        "frutas": ["laranja", "limao", "abacate", "cenoura", "alface"],
+        "cordenadas": [-24.947208, -53.507515]
+    },
+    "horta13": {
+        "endereco": "Rua Joao Berlando S/N, Santa Cruz - Cascavel, Brasil",
+        "familias": "09",
+        "patrimonio": "HORTA ESCOLA",
+        "frutas": ["mamao", "banana", "morango", "melao", "alface", "beterraba"],
+        "cordenadas": [-24.959287, -53.496759]
+    },
+    "horta14": {
+        "endereco": "Rua- Citrino Nº123, Esmeralda - Cascavel, Brasil",
+        "familias": "06",
+        "patrimonio": "Territorio",
+        "frutas": ["uva", "pessego", "tomate", "brocolis", "beterraba"],
+        "cordenadas": [-24.972616, -53.507725]
+    },
+    "horta15": {
+        "endereco": "Rua Tupinambas nº 1400, Santa Cruz - Cascavel, Brasil",
+        "familias": "01",
+        "patrimonio": "Eco Ponto",
+        "frutas": ["morango", "alface", "tomate", "brocolis", "beterraba"],
+        "cordenadas": [-24.967097, -53.501186]
+    },
+    "horta16": {
+        "endereco": "Rua- Osvaldo Cruz S/N, Neva - Cascavel, Brasil",
+        "familias": "03",
+        "patrimonio": "Territorio",
+        "frutas": ["mamao", "abobrinha", "cenoura", "tomate", "alface"],
+        "cordenadas": [-24.958601, -53.468271]
+    },
+    "horta17": {
+        "endereco": "Rua- Cap. Benedicto Lopes Braganca Nº1109, Santa Felicidade - Cascavel, Brasil",
+        "familias": "06",
+        "patrimonio": "Partrimonio",
+        "frutas": ["abacate", "kiwi", "ameixa", "goiaba", "mamao", "tomate", "alface"],
+        "cordenadas": [-24.995035, -53.464754]
+    },
+    "horta18": {
+        "endereco": "Rua- Cap. Danilo Paladino Nº 616, Santa Felicidade - Cascavel, Brasil",
+        "familias": "01",
+        "patrimonio": "Linhao",
+        "frutas": ["laranja", "limao", "cenoura", "tomate", "alface"],
+        "cordenadas": [-24.992829, -53.465221]
+    },
+    "horta19": {
+        "endereco": "Rua - Andre de Barros (Servidao), Nº S/N, Santa Felicidade - Cascavel, Brasil",
+        "familias": "04",
+        "patrimonio": "Linhão",
+        "frutas": ["figo", "maca", "abacate", "mamao", "cenoura", "alface"],
+        "cordenadas": [-24.988714, -53.457560]
+    },
+    "horta20": {
+        "endereco": "Rua- Joao Ribeiro Pinheiro (Servidao), Nº S/N, Santa Felicidade - Cascavel, Brasil",
+        "familias": "03",
+        "patrimonio": "Linhão",
+        "frutas": ["banana", "morango", "laranja", "cenoura", "tomate", "alface"],
+        "cordenadas": [-24.992192, -53.466456]
+    }
+}
