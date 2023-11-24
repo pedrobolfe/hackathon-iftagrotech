@@ -147,7 +147,7 @@
         "endereco": "Rua Cap. Benedicto Lopes Braganca n1109, Santa Felicidade - Cascavel, Brasil",
         "familias": "06",
         "patrimonio": "Partrimonio",
-        "frutas": ["abacate", "kiwi", "ameixa", "goiaba", "mamao", "tomate", "alface"],
+        "frutas": ["abacate", "goiaba", "uva", "tomate", "alface"],
         "cordenadas": [-24.995035, -53.464754],
         "email": "produtor@gmail.com",
         "numero": "XX XXXXXXXXX"
@@ -176,6 +176,114 @@
         "patrimonio": "Linhão",
         "frutas": ["banana", "morango", "laranja", "cenoura", "tomate", "alface"],
         "cordenadas": [-24.992192, -53.466456],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta21" : {
+        "endereco" : " Rua Serra Dourada Nº 39, Cataratas - Cascavel, Brasil",
+        "familias" : "14",
+        "patrimonio": "Semed",
+        "frutas" : ["uva", "cenoura", "cebola", "brocolis", "alface", "maca"],
+        "cordenadas" : [-24.949989, -53.406442],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta22" : {
+        "endereco" : " Rua Lagoa Araucaria Nº 1342, Lago Azul - Cascavel, Brasil",
+        "familias" : "01",
+        "patrimonio": "Território",
+        "frutas" : ["alface", "uva", "abacate", " banana"],
+        "cordenadas" : [-24.924116, -53.391651],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta23" : {
+        "endereco" : "Rua Luiz Mantovani Nº 565, Belmonte - Cascavel, Brasil",
+        "familias" : "06",
+        "patrimonio": "Território",
+        "frutas" : ["laranja", "brocolis", "cebola", "brocolis", "alface"],
+        "cordenadas" : [-24.929681, -53.404264],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta24" : {
+        "endereco" : "Serra do Araruna Nº 339, Vale do ipes - Cascavel, Brasil",
+        "familias" : "08",
+        "patrimonio": "Território",
+        "frutas" : ["uva", "cenoura", "cebola", "brocolis", "alface"],
+        "cordenadas" : [-23.929238, -52.496744],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta25" : {
+        "endereco" : "Rua El Salvador /Asia, Periolo - Cascavel, Brasil",
+        "familias" : "07",
+        "patrimonio": "Linhão",
+        "frutas" : ["uva", "cenoura", "cebola", "brocolis", "alface"],
+        "cordenadas" : [-24.938076, -53.412718],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta26" : {
+        "endereco" : "Rua Pico da Neblina Nº 336, Morumbi II - Cascavel, Brasil",
+        "familias" : "06",
+        "patrimonio": "Concessão",
+        "frutas" : ["morango", "banana", "mamao", "laranja", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas" : [-24.935549, -53.408608],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta27" : {
+        "endereco" : "Rua Florêncio Galafassi nº 52, Morumbi - Cascavel, Brasil",
+        "familias" : "03",
+        "patrimonio": "Território/Sema",
+        "frutas" : ["morango", "banana", "mamao", "laranja", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas" : [-24.942682, -53.409422],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta28" : {
+        "endereco" : "Rua Agenor de Mello S/N, Sanga Funda - Cascavel, Brasil",
+        "familias" : "12",
+        "patrimonio": "Sesau",
+        "frutas" : ["morango", "banana", "mamao", "cenoura", "cebola", "brocolis"],
+        "cordenadas" : [-24.912374, -53.428064],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta29" : {
+        "endereco" : "Rua Gilberto Bispo dos Santos S/N, florais/rivieira - Cascavel, Brasil",
+        "familias" : "03",
+        "patrimonio": "Sesau",
+        "frutas" : ["morango", "banana", "mamao", "laranja", "alface", "tomate"],
+        "cordenadas" : [-24.915037, -53.407603],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta30" : {
+        "endereco" : "Rua Carlos Dalmolin nº53 Vi, Vista linda/Canada - Cascavel, Brasil",
+        "familias" : "02",
+        "patrimonio": "Linhão",
+        "frutas" : ["morango", "banana", "mamao", "laranja", "cebola", "brocolis"],
+        "cordenadas" : [-24.926891, -53.455983],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta31" : {
+        "endereco" : "Rua Recife Nº 3556, Aclimação - Cascavel, Brasil",
+        "familias" : "06",
+        "patrimonio": "Território",
+        "frutas" : ["laranja", "alface", "tomate", "cenoura", "cebola", "brocolis"],
+        "cordenadas" : [-24.950052, -53.492186],
+        "email": "produtor@gmail.com",
+        "numero": "XX XXXXXXXXX"
+    },
+    "horta32" : {
+        "endereco" : "Rua Irma Dulce, Esmeralda /Tio Zaca - Cascavel, Brasil",
+        "familias" : "09",
+        "pa2trimonio": "Território",
+        "frutas" : ["morango", "banana", "mamao", "laranja", "cebola", "brocolis"],
+        "cordenadas" : [-24.960202, -53.511710],
         "email": "produtor@gmail.com",
         "numero": "XX XXXXXXXXX"
     }
