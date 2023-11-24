@@ -288,7 +288,7 @@
                   <div class="cart-button d-flex">
                     <div class="btn btn-medium btn-black" id="produtos">
                       <div>
-                        <a href="#demo-modal" class="text-white" data-toggle="modal">🌐 Locais</a>
+                        <a href="#yearly-sale" class="text-white">🌐 Locais</a>
                         <p></p>
                         <a href="#myModal" class="text-white" data-toggle="modal">📅 Datas anuais</a>
                       </div>
@@ -314,7 +314,7 @@
                   <div class="cart-button d-flex">
                     <div class="btn btn-medium btn-black" id="produtos">
                       <div>
-                        <a href="#demo-modal" class="text-white" data-toggle="modal">🌐 Locais</a>
+                        <a href="#yearly-sale" class="text-white">🌐 Locais</a>
                         <p></p>
                         <a href="#myModal" class="text-white" data-toggle="modal">📅 Datas anuais</a>
                       </div>
@@ -340,7 +340,7 @@
                   <div class="cart-button d-flex">
                     <div class="btn btn-medium btn-black" id="produtos">
                       <div>
-                        <a href="#demo-modal" class="text-white" data-toggle="modal">🌐 Locais</a>
+                        <a href="#yearly-sale" class="text-white">🌐 Locais</a>
                         <p></p>
                         <a href="#myModal" class="text-white" data-toggle="modal">📅 Datas anuais</a>
                       </div>
@@ -366,7 +366,7 @@
                   <div class="cart-button d-flex">
                     <div class="btn btn-medium btn-black" id="produtos">
                       <div>
-                        <a href="#demo-modal" class="text-white" data-toggle="modal">🌐 Locais</a>
+                        <a href="#yearly-sale" class="text-white">🌐 Locais</a>
                         <p></p>
                         <a href="#myModal" class="text-white" data-toggle="modal">📅 Datas anuais</a>
                       </div>
@@ -392,7 +392,7 @@
                   <div class="cart-button d-flex">
                     <div class="btn btn-medium btn-black" id="produtos">
                       <div>
-                        <a href="#demo-modal" class="text-white" data-toggle="modal">🌐 Locais</a>
+                        <a href="#yearly-sale" class="text-white">🌐 Locais</a>
                         <p></p>
                         <a href="#myModal" class="text-white" data-toggle="modal">📅 Datas anuais</a>
                       </div>
@@ -419,7 +419,7 @@
 
                     <div class="btn btn-medium btn-black" id="produtos">
                       <div>
-                        <a href="#demo-modal" class="text-white" data-toggle="modal">🌐 Locais</a>
+                        <a href="#yearly-sale" class="text-white">🌐 Locais</a>
                         <p></p>
                         <a href="#myModal" class="text-white" data-toggle="modal">📅 Datas anuais</a>
                       </div>
@@ -527,18 +527,18 @@
               <div class="col-md-8">
                 <select class="form-select" name="hortalicas" id="selecao-hortalicas" onchange="getLocation()">
                   <option selected>Produtos</option>
-                  <option value="Alface">Alface</option>
-                  <option value="Tomate">Tomate</option>
-                  <option value="Cenoura">Cenoura</option>
-                  <option value="Cebola">Cebola</option>
-                  <option value="Brocolis">Brócolis</option>
-                  <option value="Maca">Maçã</option>
-                  <option value="Banana">Banana</option>
-                  <option value="Laranja">Laranja</option>
-                  <option value="Morango">Morango</option>
-                  <option value="Uva">Uva</option>
-                  <option value="Melancia">Melancia</option>
-                  <option value="Pessego">Pêssego</option>
+                  <option value="alface">Alface</option>
+                  <option value="tomate">Tomate</option>
+                  <option value="cenoura">Cenoura</option>
+                  <option value="cebola">Cebola</option>
+                  <option value="brocolis">Brócolis</option>
+                  <option value="maca">Maçã</option>
+                  <option value="banana">Banana</option>
+                  <option value="laranja">Laranja</option>
+                  <option value="morango">Morango</option>
+                  <option value="uva">Uva</option>
+                  <option value="melancia">Melancia</option>
+                  <option value="pessego">Pêssego</option>
                 </select>
                 <h3>Mais proximas de</h3>
                 <div class="row">
@@ -565,10 +565,18 @@
                   }
                 
                   function showPosition(position, selectedValue) {
+                    const lat_org = position.coords.latitude;
+                    const long_org = position.coords.longitude;
+
                     console.log("Produto selecionado: " + selectedValue);
                     console.log("Latitude: " + position.coords.latitude);
                     console.log("Longitude: " + position.coords.longitude);
-                    // retornar para o Pedro lat, long nessa ordem
+
+                    const url_map = `http://127.0.0.1:8000/rota?fruta=${selectedValue}&lat_org=${lat_org}&long_org=${long_org}`
+
+                  
+                    
+                    document.getElementById("mapa").src = url_map;
                   }
                 </script>
                 
@@ -576,10 +584,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12 ms-auto">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115867.7854499444!2d-53.511574560572484!3d-24.83417726966189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3cd7497de6b7b%3A0x1981f7008f00ff27!2sEspig%C3%A3o%20Azul%2C%20Cascavel%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1700759736150!5m2!1spt-BR!2sbr"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="" id="mapa" frameborder="0" style="height: 500px; width: 600px;"></iframe>
           </div>
         </div>
       </section>
