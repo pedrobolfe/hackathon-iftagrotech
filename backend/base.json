@@ -134,7 +134,7 @@
     },
     "horta20": {
         "endereco": "Rua Joao Ribeiro Pinheiro (Servidao), S/N, Santa Felicidade - Cascavel, Brasil",
-        "familias": "03",
+        "familias": "02",
         "patrimonio": "Linhão",
         "frutas": ["banana", "morango", "laranja", "cenoura", "tomate", "alface"],
         "cordenadas": [-24.992192, -53.466456]
