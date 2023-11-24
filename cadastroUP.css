@@ -1,5 +1,5 @@
 body {
-    background-color: #333;
+    background-color: #2a2a2a;
   }
   
   #btnStart {
@@ -9,6 +9,10 @@ body {
     transform: translate(-50%, -50%);
   }
   
+  .card-body{
+    background-color: #e6e6e6 !important;
+  }
+
   #message {
     width: 200px;
     height: 100px;
