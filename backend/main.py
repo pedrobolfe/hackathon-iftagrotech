@@ -35,7 +35,7 @@ async def display_map(fruta, lat_org, long_org):
                                             <h3>
                                                 Contato:
                                             </h3>
-                                            Email: {str(banco[i]['email'])}
+                                            Email: {str(banco[i]['email'])} <br>
                                             Numero: {str(banco[i]['numero'])}
                                         </p>
                                     ''')
